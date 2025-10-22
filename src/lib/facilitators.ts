@@ -54,12 +54,22 @@ const thirdwebFacilitator = {
   color: 'var(--color-pink-600)',
 } satisfies Facilitator;
 
+const facilitator402104 = {
+  id: '402104',
+  name: '402104' as const,
+  image: '/402104.png',
+  link: 'https://x402.load.network',
+  addresses: ['0x7CA30E10AD4E13930Cc7a982fA5491b116D24707'],
+  color: 'var(--color-blue-600)',
+} satisfies Facilitator;
+
 export const facilitators = [
   coinbaseFacilitator,
   x402rsFacilitator,
   payAiFacilitator,
   aurraCloudFacilitator,
   thirdwebFacilitator,
+  facilitator402104,
 ] satisfies Facilitator[];
 
 type FacilitatorId = (typeof facilitators)[number]['id'];
